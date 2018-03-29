@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>背景</title>
+<style>
+
+	#p1{
+		background-color:gray;
+	}
+	
+	#p2{
+		background-color:transparent;
+	}
+	
+	#p3{
+		background-color:rgb(250,0,255);
+	}
+	
+	#p4{
+		background-color: #00ff00;
+	}
+	
+	div#div1{
+		background-image:url(../img/Zz01_test.jpg);
+		width:100px;
+		height:100px;
+	}
+	
+	div#norepeat{
+		background-image:url(../img/Zz01_test.jpg);
+		width:600px;
+		height:100px;
+		background-repeat:no-repeat;
+	}
+	
+	div#repeat-x{
+		background-image:url(../img/Zz01_test.jpg);
+		width:600px;
+		height:100px;
+		background-repeat:repeat-x;
+	}
+	
+	div#repeat-y{
+		background-image:url(../img/Zz01_test.jpg);
+		width:600px;
+		height:600px;
+		background-repeat:repeat-y;		
+	}
+	
+	div#repeat-x-y{
+		background-image:url(../img/Zz01_test.jpg);
+		width:600px;
+		height:600px;
+		background-repeat:repeat;		
+	}
+	
+	div#contain{
+		background-image:url(../img/Zz01_test.jpg);
+		width:600px;
+		height:600px;
+		background-size:contain;
+	}		
+</style>
+</head>
+<body>
+	<h1>背景颜色</h1>
+	<p id="p1">灰色</p>
+	<p id="p2">透明背景，默认即透明背景</p>
+	<p id="p3">紫色</p>
+	<p id="p4">绿色背景</p>
+	<h1>图片做背景</h1>
+	<div id="div1">
+		<p>这是一个有背景的div</p>
+	</div>
+	<h1>背景重复</h1>
+		<h2>背景不重复</h2>
+		<div id="norepeat">
+			背景不重复，背景不重复，背景不重复，背景不重复，背景不重复
+		</div>
+		<h2>背景水平重复</h2>
+		<div id="repeat-x">
+			背景水平重复，背景水平重复，背景水平重复，背景水平重复，背景水平重复
+		</div>
+		<h2>背景垂直重复</h2>
+		<div id="repeat-y">
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+			<h4>背景垂直重复</h4>
+		</div>
+		<h2>背景水平、垂直重复</h2>
+		<div id="repeat-x-y">
+			<p>背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复，背景水平、垂直重复</p><br/>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>
+			<h4>背景水平、垂直重复</h4>		
+		</div>
+	<h1>背景平铺</h1>
+	<div id="contain">
+		背景平铺，通过拉伸实现，会有失真
+	</div>
+</body>
+</html>
