@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>边框</title>
+<style>
+	div.solid{
+		border-style:solid;
+	}
+	div.dotted{
+		border-style: dotted;
+	}
+	div.dashed{
+		border-style: dashed;
+	}
+	div.double{
+		border-style: double;
+	}
+	div.red{
+		border-style: solid;
+		border-color: red;
+	}
+	div.div2{
+		border-style: solid;
+		border-color: red;
+		border-width: 1px;
+	}
+	div.div3{
+		border-style: solid;
+		border-color: red;
+	}
+	div.div4{
+		border:1px dotted LightSkyBlue;
+	}
+	div.div5{
+		width:150px;
+		height:150px;
+		border-top-style:solid;
+		border-top-color:red;
+		border-top-width: 50px;
+		background-color: lightgray;
+	}
+	div.lefttop{
+		width:150px;
+		height:150px;
+		border-top-style:solid;
+		border-top-color:red;
+		border-top-width: 50px;
+		border-left-style: solid;
+		border-left-color: blue;
+		border-left-width: 50px;
+		background-color: lightgray;
+	}
+	div.alldirection{
+		width:150px;
+		height:150px;
+		border-top-style:solid;
+		border-top-color:red;
+		border-top-width: 50px;
+		border-left-style:solid;
+		border-left-color:blue;
+		border-left-width: 50px;		
+		border-right-style:solid;
+		border-right-color:green;
+		border-right-width: 50px;		
+		border-bottom-style:solid;
+		border-bottom-color:yellow;
+		border-bottom-width: 50px;		
+		background-color: lightgray;
+		
+	}
+	div.div7{
+		border:1px solid red;
+	}
+	span.span1{
+		border:1px solid red;
+	}
+</style>
+</head>
+<body>
+	<h1>1、边框风格：border-style</h1>
+		<div class="default">默认无边框div</div>
+		<br/>
+		<div class="solid">实线边框</div>
+		<br/>
+		<div class="dotted">点状边框</div>
+		<br/>
+		<div class="dashed">虚线边框</div>
+		<br/>
+		<div class="double">双线边框</div>
+	<h1>2、边框颜色：border-color</h1>
+	    <div class="default">默认无边框div</div>
+	    <br/>
+		<div class="red">实线红色边框</div>
+	<h1>3、边框宽度:border-width</h1>
+		<div class="div1">默认无边框div</diV>
+		<div class="div2">实线红色细边框</div>
+		<div class="div3">实线红色默认宽度边框</div>
+	<h1>4、都放在一起:border</h1>
+		<div>默认无边框div</div>
+		<div class="div4">点状天蓝色细边框</div>
+	<h1>5、只有一个方向有边框:通过制定位置，可以只给一个方向设置边框风格，颜色和宽度,top,bottom,left,right 分别对应上下左右</h1>
+		<div class="div5">只有上面有边框</div>
+	<h1>6、有交界的边都有边框</h1>
+		<div class="lefttop">左边和上边都有边框</div>
+		<div class="alldirection">四边都有边框</div>
+	<h1>7、块级元素和内联元素的边框区别</h1>
+		<div class="div6">默认无边框div</div>
+		<br/>
+		<div class="div7">实线红色细边框</div>
+		<br/>
+		<span class="span1">实线红色细边框</span>
+</body>
+</html>
