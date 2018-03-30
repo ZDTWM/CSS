@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>边框：斑马线</title>
+<style>
+	table{
+		border-collapse:collapse;
+		width:90%;
+	}
+	tr.odd{
+		background-color:#f8f8f8;
+	}
+	tr.head{
+		border-bottom-width: 2px;
+	}
+	tr{
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: lightgray;
+		height:35px;
+	}
+	td{
+		width:25%;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<h1>斑马线</h1>
+	<table>
+		<thead>
+			<tr class="head">
+				<td>id</td>
+				<td>名称</td>
+				<td>血量</td>
+				<td>伤害</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="odd">
+				<td>1</td>
+				<td>盖伦</td>
+				<td>340</td>
+				<td>50</td>
+			</tr>
+			<tr class="even">
+				<td>2</td>
+				<td>提莫</td>
+				<td>320</td>
+				<td>80</td>
+			</tr>			
+			<tr class="odd">
+				<td>3</td>
+				<td>安妮</td>
+				<td>380</td>
+				<td>70</td>
+			</tr>			
+			<tr class="even">
+				<td>4</td>
+				<td>伊泽瑞尔</td>
+				<td>400</td>
+				<td>90</td>
+			</tr>			
+		</tbody>
+	</table>
+</body>
+</html>
