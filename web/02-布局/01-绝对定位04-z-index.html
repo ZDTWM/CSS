@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+<style>
+	img#i1{
+		position: absolute;	
+		left:60px;
+		top:20px;
+		z-index:1;
+	}
+	img#i2{
+		position: absolute;
+		left: 60px;
+		top:120px;
+		z-index:-1;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p >正常文字a</p>
+		<p >正常文字b</p>
+		<p >正常文字c</p>
+		<p >正常文字d</p>
+		<p >正常文字e</p>
+		<p >正常文字f</p>
+		<p >正常文字g</p>
+	</div>
+	<img id="i1" alt="图片" src="../img/Zz01_test.jpg">
+	<img id="i2" alt="图片" src="../img/Zz01_test.jpg">
+</body>
+</html>
