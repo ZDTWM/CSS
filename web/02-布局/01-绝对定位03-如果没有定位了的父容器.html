@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>如果没有定位了的父容器</title>
+<style>
+	p.abs{
+		position: absolute;
+		left:100px;
+		top:50px;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<p >正常文字a</p>
+		<p >正常文字b</p>
+		<p >正常文字c</p>
+		<p >正常文字d</p>
+		<p >正常文字e</p>
+		<p >正常文字f</p>
+		<p >正常文字g</p>
+	</div>
+	 
+	<div>
+		这个div没有定位
+		<p class="abs" >绝对定位的文字</p>
+	</div>
+</body>
+</html>
